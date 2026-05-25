@@ -19,8 +19,12 @@ class LinkedList:
     def insert(self,index, value):
         pass        
 
-
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
 
 def create_linked_list_example():
     my_linked_list = LinkedList(4)
-    print(f"my linked list: {my_linked_list}")
+    print(f"my linked list: {my_linked_list.head.value}")
